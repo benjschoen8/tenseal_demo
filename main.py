@@ -201,25 +201,6 @@ def main():
     sk = encryptor.get_sk()
     encryptor.make_public()
     
-    import inspect
-    import pprint
-
-    def introspect(obj):
-        print("Type:", type(obj))
-        print("\nAttributes and Methods (from dir):")
-        pprint.pprint(dir(obj))
-
-        try:
-            print("\n__dict__:")
-            pprint.pprint(obj.__dict__)
-        except AttributeError:
-            print("\nNo __dict__ available.")
-
-        print("\nInspect (getmembers):")
-        for name, value in inspect.getmembers(obj):
-            if not name.startswith('__'):
-                print(f"{name}: {value}")
-
     demo1(vec1, encryptor, sk)
     demo2(vec1, vec2, encryptor, sk)
     demo3(mtx1, mtx2, encryptor, sk)
