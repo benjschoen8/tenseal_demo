@@ -16,7 +16,6 @@ class Encryptor:
             # Set noise scale and generate keys
             self.context.global_scale = 2**26
             self.context.generate_galois_keys()
-            print("Encoder initialized with encryption context.")
 
         else:
             self.context = context
