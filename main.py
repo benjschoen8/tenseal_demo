@@ -205,11 +205,6 @@ def main():
     demo2(vec1, vec2, encryptor, sk)
     demo3(mtx1, mtx2, encryptor, sk)
     demo4(vec1, vec2, encryptor, sk)
-# Usage:
-    #introspect(dec_vec1.tolist())
-    #introspect(enc_vec2)
-    #introspect(enc_mtx2)
-    #introspect(sum12_vec.decrypt(sk).tolist())
 
 if __name__ == "__main__":
     main()
