@@ -100,13 +100,13 @@ def demo2(input1, input2, encryptor, sk):
     print("\n")
     print("Subtraction\n")
     result = enc_input1 - enc_input2
-    print("calculation:\n{} + {} = {}".format(raw_data(enc_input1), raw_data(enc_input2), raw_data(result)))
+    print("calculation:\n{} - {} = {}".format(raw_data(enc_input1), raw_data(enc_input2), raw_data(result)))
     print("Decryption:\n{} -> {}".format(raw_data(result), result.decrypt(sk).tolist()))
     print("Plain calculation:", sub(input1, input2))
     print("\n")
     print("Multiplication\n")
     result = enc_input1 * enc_input2
-    print("calculation:\n{} + {} = {}".format(raw_data(enc_input1), raw_data(enc_input2), raw_data(result)))
+    print("calculation:\n{} * {} = {}".format(raw_data(enc_input1), raw_data(enc_input2), raw_data(result)))
     print("Decryption:\n{} -> {}".format(raw_data(result), result.decrypt(sk).tolist()))
     print("Plain calculation:", mul(input1, input2))
     print("\n")
